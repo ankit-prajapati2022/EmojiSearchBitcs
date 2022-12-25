@@ -1,0 +1,97 @@
+.SearchBar .Card {
+  padding: 1px;
+  border-radius: 10px;
+  background: linear-gradient(
+    -67deg,
+    rgba(49, 36, 80, 0.7),
+    rgba(94, 66, 166, 0.8)
+  );
+  overflow: hidden;
+  box-shadow: -2px -2px 6px rgba(49, 36, 80, 0.6), 2px 2px 12px #5e42a6;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.SearchBar .CardInner {
+  padding: 16px 16px;
+  background-color: #312450;
+  border-radius: 10px;
+}
+
+.SearchBar .container {
+  display: flex;
+}
+
+.SearchBar .Icon {
+  min-width: 46px;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 12px;
+  box-shadow: -2px -2px 6px rgba(94, 66, 166, 0.6), 2px 2px 12px #5e42a6;
+}
+.SearchBar .Icon svg {
+  transform: translate(-1px, -1px);
+}
+
+.SearchBar label {
+  font-family: "Hind", sans-serif;
+  display: block;
+  color: #5e42a6;
+  margin-bottom: 12px;
+  background: linear-gradient(45deg, #a2b7d0, #606e89);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.SearchBar .InputContainer {
+  width: 100%;
+}
+
+.SearchBar input {
+  background-color: #312450;
+  padding: 16px 32px;
+  border: none;
+  display: block;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  color: #a9b8c9;
+  -webkit-appearance: none;
+  transition: all 240ms ease-out;
+  width: 100%;
+}
+.SearchBar input::placeholder {
+  color: #6d7f8f;
+}
+.SearchBar input:focus {
+  outline: none;
+  color: #6d7f8f;
+  background-color: #eff5fa;
+}
+
+.SearchBar .InputContainer {
+  --top-shadow: inset 1px 1px 3px #5e42a6, inset 2px 2px 6px #312450;
+  --bottom-shadow: inset -2px -2px 4px rgba(94, 66, 166, 0.7);
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.SearchBar .InputContainer:before,
+.SearchBar .InputContainer:after {
+  left: 0;
+  top: 0;
+  display: block;
+  content: "";
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.SearchBar .InputContainer:before {
+  box-shadow: var(--bottom-shadow);
+}
+.SearchBar .InputContainer:after {
+  box-shadow: var(--top-shadow);
+}

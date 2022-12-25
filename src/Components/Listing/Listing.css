@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+.Listing .btn {
+  clear: both;
+  white-space: nowrap;
+  font-size: 0.8em;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
+  margin: 2px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.Listing .btn > span,
+.Listing .btn-icon > i {
+  float: left;
+  padding: 13px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  line-height: 1em;
+  font-size: 2.7em;
+}
+
+.Listing .btn > span {
+  padding: 14px 18px 16px;
+  white-space: nowrap;
+  color: #fff;
+  background: #b8b8b8;
+}
+
+.Listing .btn-icon > i {
+  border-radius: 5px 0 0 5px;
+  position: relative;
+  text-align: center;
+  font-size: 3em;
+  color: #fff;
+  background: #212121;
+}
+
+.Listing .btn-icon > i:after {
+  content: "";
+  border: 8px solid;
+  border-color: transparent transparent transparent #222;
+  position: absolute;
+  top: 13px;
+  right: -15px;
+}
+
+.Listing .btn-icon > span {
+  border-radius: 0 5px 5px 0;
+}
+
+.Listing .btn-icon:hover > i {
+  color: #3b5998;
+}
+
+.Listing .btn-icon > span {
+  background: #3b5998;
+}
