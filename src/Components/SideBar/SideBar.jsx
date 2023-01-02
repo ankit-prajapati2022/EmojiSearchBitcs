@@ -23,8 +23,8 @@ const SideBar = (props) => {
       </li>
     ));
   return (
-    <aside class="sidebar">
-      <nav class="nav">
+    <aside className="sidebar">
+      <nav className="nav">
         <ul>
           <li>
             <span onClick={handlechange} value={"Home"}>

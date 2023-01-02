@@ -29,7 +29,7 @@ const UI = () => {
     <>
       <SideBar setcat={setCategory} />
       <div className="mainbody">
-        <h1 class="purples">Bitcs Emoji Search</h1>
+        <h1 className="purples">Bitcs Emoji Search</h1>
         <SearchBar setSearch={setSearch} />
         <Listing emojis={emojis} />
       </div>

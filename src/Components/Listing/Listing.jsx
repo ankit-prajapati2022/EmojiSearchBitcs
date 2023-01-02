@@ -22,7 +22,7 @@ const Listing = (props) => {
           document.getElementById("Lists").classList.add("active");
         }}
       >
-        <span class="btn btn-icon">
+        <span className="btn btn-icon">
           <i>{emoji.character}</i>
           <span>{emoji.unicodeName}</span>
         </span>
@@ -30,8 +30,8 @@ const Listing = (props) => {
     ));
 
   return (
-    <div class="Listing" id="Lists">
-      {list.length ? renderList() : <h1 class="blues">No Emoji Here</h1>}
+    <div className="Listing" id="Lists">
+      {list.length ? renderList() : <h1 className="blues">No Emoji Here</h1>}
       <Modal dta={dta} setDta={setDta} />
     </div>
   );
